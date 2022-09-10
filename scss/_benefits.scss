@@ -1,0 +1,38 @@
+.benefits{
+	margin-bottom: 100px;
+	&__inner{
+		display: flex;
+	}
+	&__img{
+		margin-right: 95px;
+	}
+	&__content{
+		width: 100%;
+	}
+	&__title{
+		margin-left: 185px;
+	}
+	&__list{
+		background-color: $branded;
+		padding: 25px 0 25px 185px;
+		color: #fff;
+	}
+	&__item{
+		margin-bottom: 20px;
+		width: 320px;
+		&-num{
+			font-weight: 400;
+			font-size: 36px;
+			line-height: 53px;
+			text-transform: uppercase;
+		}
+		&-title{
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 36px;
+		}
+		&-text{
+			color: $gray;
+		}
+	}
+}

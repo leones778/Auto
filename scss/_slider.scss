@@ -1,0 +1,48 @@
+.slider{
+	margin: 0 -7px;	
+	margin-bottom: 100px;
+
+	&__item{
+
+		&-box{
+			text-align: center;
+			padding: 10px 5px;
+			border: 1px solid $gray;
+			margin: 0 7px;
+			transition: all .5s;
+			&:hover{
+				color: $white;
+				background-color: $accent;
+				border-color: $accent;
+			}
+		}
+		&-img{
+			max-width: 100%;
+			margin-bottom: 23px;
+		}
+		&-title{
+			margin-bottom: 5px;
+		}
+
+	}
+
+	& .slick-dots{
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		list-style: none;
+		button{
+			font-size: 0;
+			width: 50px;
+			height: 1px;
+			border: none;
+			background-color: $gray;
+			padding: 0;
+			margin: 0 10px;
+		}
+	}
+	& .slick-active button{
+		height: 3px;
+		background-color: $accent;
+	}
+}

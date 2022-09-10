@@ -1,0 +1,73 @@
+.services{
+	margin-bottom: 100px;
+	&__inner{
+		margin-bottom: 50px;
+		display: flex;
+
+		}
+	&__content{
+		width: 505px;
+		margin-right: 100px;
+		margin-bottom: 50px;
+		&-box{
+			margin-bottom: 70px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&-title{
+			color: $accent;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 27px;
+		}
+		&-text{
+			margin-top: 15px;
+		}
+	}
+	&__list{
+		counter-reset: my-counter;
+	}
+	&__item{
+		position: relative;
+		counter-increment: my-counter;
+		width: 450px;
+		padding: 10px 15px 10px 113px;
+		border: 2px solid $gray;
+		margin-bottom: 12px;
+		transition: all 0.5s;
+		&:hover {
+			border: 2px solid $accent;
+			width: 500px;
+		}
+		&:hover &-title{
+			color: $accent;
+		}
+		&:hover::before{
+			color: $accent;
+		}
+		&::before{
+			content: "0" counter(my-counter);
+			transform: rotate(270deg);
+			position: absolute;
+			left: 20px;
+			top: 16px;
+			color: $gray;
+			font-weight: 400;
+			font-size: 36px;
+			line-height: 53px;
+			text-transform: uppercase;
+			transition: all .5s;
+		}
+
+		&-title{
+			color: $black;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 36px;
+		}
+		&-text{
+			color: #000;
+		}
+	}
+}
